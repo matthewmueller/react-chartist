@@ -29,7 +29,7 @@
     "chartist": "0.9.4"
   },
   "scripts": {
-    "build": "mkdir -p dist && babel index.js > dist/index.js"
+    "postinstall": "mkdir -p dist && ./node_modules/.bin/babel index.js > dist/index.js"
   },
   "devDependencies": {
     "babel": "^5.1.8",
